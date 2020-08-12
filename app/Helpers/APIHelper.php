@@ -20,8 +20,11 @@ class APIHelper
             if ($result) {
                 $url = $disk->url($result);
                 $reSizePath = public_path(''.$url);
+                $uploaded_file = Image::make($reSizePath)->resize(300, 300, function($constraint) {
+                    $constraint->aspectRatio();
+                });
                 $uploaded_file->save($reSizePath);
-                return $url;
+                return $url; 
 
             } else {
                 $url = null;

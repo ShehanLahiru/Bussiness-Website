@@ -3,25 +3,25 @@
       Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
   -->
     <div class="logo">
-        <a href="{{route('backend.home')}}" class="simple-text logo-normal">
+        <a href="{{route('backend.dashboard')}}" class="simple-text logo-normal">
             {{ __('Online Shopping Backend') }}
         </a>
     </div>
-    {{-- <div class="sidebar-wrapper" id="sidebar-wrapper">
+    <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
             <li class="@if ($activePage == 'home') active @endif">
-                <a href="{{ route('backend.home') }}">
+                <a href="{{ route('backend.dashboard') }}">
                     <i class="now-ui-icons design_app"></i>
                     <p>{{ __('Dashboard') }}</p>
                 </a>
             </li>
-            <li class="@if ($activePage == 'orders') active @endif">
-                <a href="{{ route('backend.orders.index') }}">
+            <li class="@if ($activePage == 'projects') active @endif">
+                <a href="{{ route('backend.projects.index') }}">
                     <i class="fas fa-user"></i>
-                    <p>{{ __('Orders') }}</p>
+                    <p>{{ __('Projects') }}</p>
                 </a>
             </li>
-            <li class="@if ($activePage == 'orders') active @endif">
+            {{-- <li class="@if ($activePage == 'orders') active @endif">
                 <a href="{{ route('backend.getTodayOreder') }}">
                     <i class="fas fa-user"></i>
                     <p>{{ __('Today Orders') }}</p>
@@ -92,7 +92,7 @@
                     <i class="fas fa-image"></i>
                     <p>{{ __('Banner Images') }}</p>
                 </a>
-            </li>
+            </li> --}}
         </ul>
-    </div> --}}
+    </div>
 </div>
