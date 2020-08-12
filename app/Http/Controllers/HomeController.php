@@ -10,4 +10,8 @@ class HomeController extends Controller
 
         return view('frontend/page/home');
     }
+    public function index(){
+
+        return view('backend/home');
+    }
 }
