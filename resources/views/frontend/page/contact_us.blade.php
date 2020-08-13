@@ -8,48 +8,66 @@
       </div>
     </div>
   </div>
-
-  <div class="site-section bg-light">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-12 col-lg-8 mb-5">
-
-
-
-          <form action="#" class="p-5 bg-white">
-
-            <div class="row form-group">
-              <div class="col-md-12 mb-3 mb-md-0">
-                <label class="font-weight-bold" for="fullname">Full Name</label>
-                <input type="text" id="fullname" class="form-control" placeholder="Full Name">
-              </div>
+<div class="panel-header panel-header-sm">
+</div>
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"> Enter Your Message Here</h4>
+                </div>
+                <div class="card-body">
+                    <form id="riddle_create" method="post" action="{{ route('backend.customers.store') }}" enctype="multipart/form-data">
+                        @csrf
+                        @include('backend.alerts.success')
+                        <div class="row">
+                            <div class="col-md-7 pr-1">
+                                <div class="form-group">
+                                    <label for="name">{{__("Name")}}</label>
+                                    <input type="text" name="name" class="form-control" value="{{ old('name') }}">
+                                    @include('backend.alerts.feedback', ['field' => 'name'])
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 pr-1">
+                                <div class="form-group">
+                                    <label for="email">{{__("Email")}}</label>
+                                    <input type="text" name="email" class="form-control" value="{{ old('email') }}">
+                                    @include('backend.alerts.feedback', ['field' => 'email'])
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 pr-1">
+                                <div class="form-group">
+                                    <label for="contact_no">{{__("Contact Number")}}</label>
+                                    <input type="text" name="contact_no" class="form-control" value="{{ old('contact_no') }}">
+                                    @include('backend.alerts.feedback', ['field' => 'contact_no'])
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 pr-1">
+                                <div class="form-group">
+                                    <label for="message">{{__("Meassage")}}</label>
+                                    <input type="textarea" name="message" class="form-control" value="{{ old('message') }}">
+                                    @include('backend.alerts.feedback', ['field' => 'message'])
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer ">
+                            <button type="submit" class="btn btn-primary btn-round">{{__('Submit')}}</button>
+                        </div>
+                        <hr class="half-rule"/>
+                    </form>
+                </div>
             </div>
-            <div class="row form-group">
-              <div class="col-md-12">
-                <label class="font-weight-bold" for="email">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Email Address">
-              </div>
-            </div>
-
-
-
-            <div class="row form-group">
-              <div class="col-md-12">
-                <label class="font-weight-bold" for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Say hello to us"></textarea>
-              </div>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-md-12">
-                <input type="submit" value="Send" class="btn btn-primary">
-              </div>
-            </div>
-
-
-          </form>
         </div>
+    </div>
+</div>
+
 
         <div class="col-lg-4">
           <div class="p-4 mb-3 bg-white">

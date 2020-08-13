@@ -16,7 +16,6 @@ class ProjectController extends Controller
     public function index(){
 
         $projects = Project::all();
-       // dd( $projects);
         return view('backend.pages.projects.index',["projects" => $projects]);
     }
     public function create(){
@@ -45,7 +44,6 @@ class ProjectController extends Controller
     public function edit($id)
     {
         $project = Project::find($id);
-        //dd($project);
         return view('backend.pages.projects.edit', ["project" => $project]);
     }
     public function update(Request $request,$id)

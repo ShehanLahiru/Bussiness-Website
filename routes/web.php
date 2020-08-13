@@ -18,6 +18,7 @@ Route::post('logout', 'Auth\LoginController@logout')->name('backend.logout');
 Route::get('/dashboard', 'HomeController@index')->name('backend.dashboard');
 
 Route::resource('projects', 'ProjectController', ['as' => 'backend']);
+Route::resource('customers', 'CustomerController', ['as' => 'backend']);
 
 
 #frontend

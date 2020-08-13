@@ -21,6 +21,12 @@
                     <p>{{ __('Projects') }}</p>
                 </a>
             </li>
+            <li class="@if ($activePage == 'customers') active @endif">
+                <a href="{{ route('backend.customers.index') }}">
+                    <i class="fas fa-user"></i>
+                    <p>{{ __('Customers') }}</p>
+                </a>
+            </li>
             {{-- <li class="@if ($activePage == 'orders') active @endif">
                 <a href="{{ route('backend.getTodayOreder') }}">
                     <i class="fas fa-user"></i>
