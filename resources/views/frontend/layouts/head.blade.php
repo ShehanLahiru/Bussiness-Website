@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Solid Water Systems &mdash;  </title>
+    <title>Solid Water Systems &mdash; </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -46,18 +46,26 @@
         </div>
       </div>
       <div class="site-navbar">
-        <div class="container py-1">
-          <div class="row align-items-center">
-
-              <div class = "col-6">
-                <h2  class="mb-0 site-logo"><a href="index.html">SWS</a></h2>
-              </div>
-
-           <div class="col-6">
+        <div class="container fluid">
+            <div class="row align-items-center">
+                <div class = "col-2">
+                    <div class="image-logo">
+                        <img width="100px" src="images/logo.png" alt="Image" class="img-fluid">
+                    </div>
+                </div>
+          {{-- <div class="row">
+            <div class = "col-6">
+                <div class="image-logo">
+                    <img width="50px" src="images/logo.png" alt="Image" class="img-fluid">
+                </div>
+            </div> --}}
+            {{-- <div class = "col-6">
+                <div class="site-logo"><a href="{{  route('home')  }}"><strong>Solar Water System</strong></a></div>
+            </div> --}}
+           <div class="col-10">
               <nav class="site-navigation text-right" role="navigation">
                 <div class="container">
                   <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
-
                   <ul class="site-menu js-clone-nav d-none d-lg-block">
                     <li><a href={{ route('home') }}>Home</></li>
                     <li><a href={{ route('project') }}>Projects</a></li>

@@ -37,7 +37,7 @@
                                 <div class="col-md-7 pr-1">
                                     <div class="form-group">
                                         <label for="description">{{__("Description")}}</label>
-                                        <input type="text" name="description" class="form-control" value="{{ old('description') }}">
+                                        <input type="textarea" name="description" class="form-control" value="{{ old('description') }}">
                                         @include('backend.alerts.feedback', ['field' => 'description'])
                                     </div>
                                 </div>

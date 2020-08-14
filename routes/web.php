@@ -23,7 +23,7 @@ Route::resource('customers', 'CustomerController', ['as' => 'backend']);
 
 #frontend
 
-Route::get('/project', 'ProjectController@home')->name('project');
+Route::get('/project', 'ProjectController@project')->name('project');
 
 Route::get('/contact_us', function () {
     return view('frontend/page/contact_us');

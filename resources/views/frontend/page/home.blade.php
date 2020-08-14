@@ -45,17 +45,8 @@
 
     </div>
 
-    <div class="site-section">
-
+    <div class="site-section section-project">
       <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-12 text-center">
-            <h2 class="font-weight-light text-black display-4">Our Products</h2>
-          </div>
-          <div class="col-md-7 text-center">
-            <p>We can provide best and quality product for you</p>
-          </div>
-        </div>
         <div class="row no-gutters align-items-stretch h-100">
           <div class="col-lg-6">
             <div class="row no-gutters align-items-stretch h-100 half-sm">
