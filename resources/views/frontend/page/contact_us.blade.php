@@ -14,7 +14,7 @@
 <div class="site-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-lg-8 mb-5">
+            <div class="col-md-12 col-lg-6 mb-5">
                 <div class="card">
                     <div class="card-header">
                         <h4 class="card-title"> Enter Your Message Here</h4>
@@ -70,21 +70,15 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="col-lg-4">
-            <div class="p-4 mb-3 bg-white">
-              <h3 class="h5 text-black mb-3">Contact Info</h3>
-              <p class="mb-0 font-weight-bold">Address</p>
-              <p class="mb-4">304, KANDY ROAD,KURUNEGALA</p>
+            <div class="col-md-12 col-lg-6 mb-5">
 
-              <p class="mb-0 font-weight-bold">Phone</p>
-              <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.088716323635!2d79.8471345!3d6.9178178!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab35aa2a9b50b482!2sSri%20Lanka%20Tourism%20Development%20Authority!5e0!3m2!1sen!2slk!4v1578501461522!5m2!1sen!2slk"
+                        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
 
-              <p class="mb-0 font-weight-bold">Email Address</p>
-              <p class="mb-0"><a href="#">youremail@domain.com</a></p>
             </div>
-
-          </div>
-    </div> --}}
         </div>
     </div>
 </div>

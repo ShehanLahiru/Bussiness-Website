@@ -66,7 +66,7 @@
                                         <li><a href={{ route('project') }}>Projects</a></li>
                                         <li><a href={{ route('about-us') }}>About Us</a></li>
                                         <li><a href={{ route('contact-us') }}>Contact Us</a></li>
-                                        <li><a href="#">info@example.com</a></li>
+                                        {{-- <li><a href="#">info@example.com</a></li> --}}
                                         <li><a href={{ route('contact-us') }}>Facebook</a></li>
                                     </ul>
                                 </div>
