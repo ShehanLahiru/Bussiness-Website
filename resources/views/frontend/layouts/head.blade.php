@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="site-navbar">
+            <div id = "site-navbar" class="site-navbar">
                 <div class="container fluid">
                     <div class="row align-items-center">
                         <div class="col-2">
@@ -61,13 +61,11 @@
                                             class="site-menu-toggle js-menu-toggle text-black"><span
                                                 class="icon-menu h3"></span></a></div>
                                     <ul class="site-menu js-clone-nav d-none d-lg-block">
-                                        <li><a href={{ route('home') }}>Home</>
+                                        <li><a active href={{ route('home') }}>Home</>
                                         </li>
                                         <li><a href={{ route('project') }}>Projects</a></li>
                                         <li><a href={{ route('about-us') }}>About Us</a></li>
                                         <li><a href={{ route('contact-us') }}>Contact Us</a></li>
-                                        {{-- <li><a href="#">info@example.com</a></li> --}}
-                                        <li><a href={{ route('contact-us') }}>Facebook</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -89,7 +87,31 @@
         <script src="js/aos.js"></script>
 
         <script src="js/main.js"></script>
+        <script>
+            jQuery(function($) {
+                var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
+                $('ul a').each(function() {
+                if (this.href === path) {
+                $(this).addClass('active');
+                }
+                });
+             });
+
+             if ($(window).width() > 992) {
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 40) {
+                        $('#site-navbar').addClass("fixed-top");
+                        // add padding top to show content behind navbar
+                        $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+                }else{
+                    $('#site-navbar').removeClass("fixed-top");
+                        // remove padding top from body
+                    $('body').css('padding-top', '0');
+      }
+  });
+}
+        </script>
 
 </body>
-
 </html>
+

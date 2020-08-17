@@ -214,7 +214,7 @@ a {
 
 .bg-image {
   background-size: cover;
-  background-repeat: no-rpeeat;
+  background-repeat: no-repeat;
   overflow: hidden;
   background-position: center center; }
   .bg-image.center {
@@ -264,10 +264,11 @@ a {
     font-size: 0.8rem; }
 
   .site-navbar-top{
-    background: url(../images/topbg.jpeg);
+    background: url(../images/topbag5.jpg);
     padding: 20px;
     background-position: bottom;
-    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: auto;
     height: auto;
     position: relative;
@@ -286,7 +287,8 @@ a {
     background-color: #fff;
     margin-bottom: 0px;
     width: 100%;
-    border-bottom: none; }
+    border-bottom: none;
+    box-shadow: 0 5px 10px rgba(0,0,128,.4); }
 
   .site-navbar .site-logo {
     font-weight: 800;
@@ -324,7 +326,12 @@ a {
         font-size: 15px;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: #000080; }
+          color: #000066;
+        font-weight: bolder; }
+        .site-navbar .site-navigation .site-menu .active{
+            color: #000066;
+            font-weight: bolder;
+        }
       .site-navbar .site-navigation .site-menu > li:last-child {
         padding-right: 0; }
         .site-navbar .site-navigation .site-menu > li:last-child > a {
