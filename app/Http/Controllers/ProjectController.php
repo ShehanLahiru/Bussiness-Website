@@ -52,7 +52,9 @@ class ProjectController extends Controller
         $project->title = $request->input("title");
         $project->description = $request->input("description");
         if ($request->hasFile('image')) {
-            APIHelper::removeImage($project->image_url);
+            if( $project->image_url){
+                APIHelper::removeImage($project->image_url);
+            }
             $url = APIHelper::uploadFileToStorage($request->file('image'), 'public/common_media');
             $project->image_url = $url;
         }

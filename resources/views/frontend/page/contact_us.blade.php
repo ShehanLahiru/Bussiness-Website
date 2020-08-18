@@ -73,9 +73,7 @@
             <div class="col-md-12 col-lg-6 mb-5">
 
                 <div class="contact-map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.088716323635!2d79.8471345!3d6.9178178!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab35aa2a9b50b482!2sSri%20Lanka%20Tourism%20Development%20Authority!5e0!3m2!1sen!2slk!4v1578501461522!5m2!1sen!2slk"
-                        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7911.639209878227!2d80.35533494470852!3d7.485162028296652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae33a18c84dd003%3A0xdf4c90fbcbb7ef32!2sKurunegala%20Town%20Central%2C%20Kurunegala!5e0!3m2!1sen!2slk!4v1597719729928!5m2!1sen!2slk"  width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
 
             </div>
