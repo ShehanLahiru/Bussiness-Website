@@ -70,11 +70,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 text-center">
+            {{-- <div class="col-md-6 text-center">
                 <h2 class="display-4 text-black mb-5">The Leadership</h2>
-            </div>
+            </div> --}}
         </div>
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-md-6 pr-md-5 text-left mb-5">
                 <div>
                     <img src="images/person_1.jpg" alt="Image" class="w-50 mb-5 rounded">
@@ -115,9 +115,9 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
-        <div class="row mt-5">
+        {{-- <div class="row mt-5">
             <div class="col-12 text-center">
                 <h2 class="display-5 text-black mb-5">More Peopple</h2>
             </div>
@@ -177,7 +177,7 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
 

@@ -27,7 +27,7 @@ a {
     text-decoration: none; }
 
 .text-black {
-  color: #28a745 !important;
+  color: #000066 !important;
   font-weight: 600;
   font-size: 30px;
  }
@@ -211,6 +211,10 @@ a {
   background: #000;
   -webkit-box-shadow: 20px 0 0 #000, -20px 0 0 #000;
   box-shadow: 20px 0 0 #000, -20px 0 0 #000; }
+
+ .project.main.image{
+    height: 50vh;
+ }
 
 .bg-image {
   background-size: cover;

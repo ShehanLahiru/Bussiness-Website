@@ -8,12 +8,9 @@
 
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
-                    <h5 class="text-uppercase font-weight-bold">Company name</h5>
+                    <h5 class="text-uppercase font-weight-bold">Solid Water System</h5>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <h6> you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipisicing elit.</h6>
-
+                    <h6>  Sri Lanka's one of the premier water treatment providers</h6>
                 </div>
 
                 <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
