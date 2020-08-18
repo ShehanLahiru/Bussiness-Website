@@ -10,6 +10,7 @@
     </div>
 </div>
 <div class="panel-header panel-header-sm">
+    @include('backend.alerts.success')
 </div>
 <div class="site-section">
     <div class="container">
@@ -23,7 +24,6 @@
                         <form id="riddle_create" method="post" action="{{ route('backend.customers.store') }}"
                             enctype="multipart/form-data">
                             @csrf
-                            @include('backend.alerts.success')
                             <div class="row">
                                 <div class="col-md-7 pr-1">
                                     <div class="form-group">
