@@ -53,29 +53,27 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-7 pr-1">
+                                <div class="col-md-10 pr-1">
                                     <div class="form-group">
                                         <label for="message">{{__("Meassage")}}</label>
-                                        <input type="textarea" name="message" class="form-control"
-                                            value="{{ old('message') }}">
+                                        <textarea type="text" rows="10" name="message" class="form-control"
+                                            style="border:1px solid #E3E3E3">{{ old('message') }}</textarea>
                                         @include('backend.alerts.feedback', ['field' => 'message'])
                                     </div>
                                 </div>
                             </div>
                             <div class="card-footer ">
-                                <button type="submit" class="btn btn-primary btn-round">{{__('Submit')}}</button>
+                                <button type="submit"
+                                    class="btn btn-primary float-right btn-round">{{__('Submit')}}</button>
                             </div>
-                            <hr class="half-rule" />
                         </form>
                     </div>
                 </div>
             </div>
             <div class="col-md-12 col-lg-6 mb-5">
-
-                <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7911.639209878227!2d80.35533494470852!3d7.485162028296652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae33a18c84dd003%3A0xdf4c90fbcbb7ef32!2sKurunegala%20Town%20Central%2C%20Kurunegala!5e0!3m2!1sen!2slk!4v1597719729928!5m2!1sen!2slk"  width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </div>
-
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7911.639209878227!2d80.35533494470852!3d7.485162028296652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae33a18c84dd003%3A0xdf4c90fbcbb7ef32!2sKurunegala%20Town%20Central%2C%20Kurunegala!5e0!3m2!1sen!2slk!4v1597719729928!5m2!1sen!2slk"
+                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
         </div>
     </div>

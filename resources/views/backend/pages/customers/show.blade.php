@@ -51,7 +51,7 @@
                                 <div class="col-md-7 pr-1">
                                     <div class="form-group">
                                         <label for="message">{{__(" Message")}}</label>
-                                        <input type="textarea" name="message" class="form-control" value="{{ old('message',$customer->message) }}">
+                                        <textarea type="text" rows="20" name="message" class="form-control" style="border:1px solid #E3E3E3">{{ old('message',$customer->message) }}</textarea>
                                         @include('backend.alerts.feedback', ['field' => 'message'])
                                     </div>
                                 </div>
