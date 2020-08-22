@@ -31,8 +31,8 @@
 
     <!--  Social tags      -->
     <meta name="keywords" content="">
-    <meta name="description" content="Online Shop">
-    <meta itemprop="image" content="{{ asset('assets/img/now-logo.png') }}">
+    <meta name="description" content="Solid Water System">
+    <meta itemprop="image" content="{{ asset('images/logo.png') }}">
 
 
     <!-- Twitter Card data -->
@@ -42,7 +42,7 @@
 
     <meta name="twitter:description" content="">
     <meta name="twitter:creator" content="">
-    <meta name="twitter:image" content="{{ asset('assets/img/now-logo.png') }}">
+    <meta name="twitter:image" content="{{  asset('images/logo.png') }}">
 
 
     <!-- Open Graph data -->
@@ -50,10 +50,10 @@
     <meta property="og:title" content=""/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="http://demos.creative-tim.com/now-ui-dashboard-pro/examples/dashboard.html"/>
-    <meta property="og:image" content="{{ asset('assets/img/now-logo.png') }}"/>
+    <meta property="og:image" content="{{  asset('images/logo.png') }}"/>
     <meta property="og:description"
           content=" Online Shopping"/>
-    <meta property="og:site_name" content=" Online Shopping"/>
+    <meta property="og:site_name" content=" Solid Water System"/>
     <title>
         Online Shopping
     </title>

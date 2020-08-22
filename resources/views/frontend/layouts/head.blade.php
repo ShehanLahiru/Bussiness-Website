@@ -51,7 +51,7 @@
                     <div class="row align-items-center">
                         <div class="col-2">
                             <div class="image-logo">
-                                <img width="70px" src="images/logo.png" alt="Image">
+                                <img width="70px" height="70px" src="images/logo.png" alt="Image">
                             </div>
                         </div>
                         <div class="col-10">

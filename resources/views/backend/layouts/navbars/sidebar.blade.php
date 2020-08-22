@@ -4,7 +4,7 @@
   -->
     <div class="logo">
         <a href="{{route('backend.dashboard')}}" class="simple-text logo-normal">
-            {{ __('Online Shopping Backend') }}
+            {{ __('Solid Water Backend') }}
         </a>
     </div>
     <div class="sidebar-wrapper" id="sidebar-wrapper">

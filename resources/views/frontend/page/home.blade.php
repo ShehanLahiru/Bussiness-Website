@@ -60,8 +60,8 @@
         <div class="row no-gutters align-items-stretch h-100">
             <div class="col-md-6 col-lg-6 mb-6">
                 <div class="post-entry bg-white">
-                    <div class="project main image">
-                        <img src="images/4.jpg" alt="Image">
+                    <div class="image">
+                        <img src="images/8.jpg" alt="Image" class="img-fluid">
                     </div>
                     <div class="text p-4">
                         <h2 class="h2 text-main">Lorem ipsum dolor sit amet</h2>
@@ -76,7 +76,7 @@
             </div>
             <div class="col-md-6 col-lg-6 mb-6">
                 <div class="post-entry bg-white">
-                    <div class="project main image">
+                    <div class="image">
                         <img src="images/7.jpg" alt="Image" class="img-fluid">
                     </div>
                     <div class="text p-4">
@@ -92,8 +92,8 @@
             </div>
             <div class="col-md-6 col-lg-6 mb-6">
                 <div class="post-entry bg-white">
-                    <div class="project main image">
-                        <img src="images/8.jpg" alt="Image" class="img-fluid">
+                    <div class="image">
+                        <img width="400px" height="400px" src="images/8.jpg" alt="Image" class="img-fluid">
                     </div>
                     <div class="text p-4">
                         <h2 class="h2 text-main">Lorem ipsum dolor sit amet</h2>
@@ -108,8 +108,8 @@
             </div>
             <div class="col-md-6 col-lg-6 mb-6">
                 <div class="post-entry bg-white">
-                    <div class="project main image">
-                        <img src="images/x.jpg" alt="Image" class="img-fluid">
+                    <div class="image">
+                        <img  width="400px" height="400px"src="images/x.jpg" alt="Image" class="img-fluid">
                     </div>
                     <div class="text p-4">
                         <h2 class="h2 text-main">Lorem ipsum dolor sit amet</h2>

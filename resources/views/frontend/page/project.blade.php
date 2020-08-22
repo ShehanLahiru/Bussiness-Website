@@ -16,7 +16,7 @@
             <div class="col-md-12 col-lg-12 mb-12">
                 <div class="post-entry bg-white">
                     <div class="image">
-                        <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+                        <img src="images/4.jpg" alt="Image" class="img-fluid">
                     </div>
                     <div class="text p-4">
                         <h2 class="h2 text-black">Lorem ipsum dolor sit amet</h2>
