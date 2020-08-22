@@ -27,6 +27,24 @@
                     <p>{{ __('Customers') }}</p>
                 </a>
             </li>
+            <li class="@if ($activePage == 'mainImages') active @endif">
+                <a href="{{ route('backend.mainImages.index') }}">
+                    <i class="fas fa-user"></i>
+                    <p>{{ __('Main Images') }}</p>
+                </a>
+            </li>
+            <li class="@if ($activePage == 'services') active @endif">
+                <a href="{{ route('backend.services.index') }}">
+                    <i class="fas fa-user"></i>
+                    <p>{{ __('Services') }}</p>
+                </a>
+            </li>
+            <li class="@if ($activePage == 'contactDetails') active @endif">
+                <a href="{{ route('backend.contactDetails.index') }}">
+                    <i class="fas fa-user"></i>
+                    <p>{{ __('Contact Details') }}</p>
+                </a>
+            </li>
             {{-- <li class="@if ($activePage == 'orders') active @endif">
                 <a href="{{ route('backend.getTodayOreder') }}">
                     <i class="fas fa-user"></i>

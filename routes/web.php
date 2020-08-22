@@ -18,12 +18,16 @@ Route::post('logout', 'Auth\LoginController@logout')->name('backend.logout');
 Route::get('/dashboard', 'HomeController@index')->name('backend.dashboard');
 
 Route::resource('projects', 'ProjectController', ['as' => 'backend']);
+Route::resource('mainImages', 'MainImageController', ['as' => 'backend']);
 Route::resource('customers', 'CustomerController', ['as' => 'backend']);
+Route::resource('contactDetails', 'ContactDetailController', ['as' => 'backend']);
+Route::resource('services', 'ServicesController', ['as' => 'backend']);
 
 
 #frontend
 
 Route::get('/project', 'ProjectController@project')->name('project');
+// Route::get('/mainImage', 'MainImageController@project')->name('mainImage');
 
 Route::get('/contact_us', function () {
     return view('frontend/page/contact_us');
