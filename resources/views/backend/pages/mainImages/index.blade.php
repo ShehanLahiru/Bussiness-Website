@@ -32,7 +32,6 @@
                                 <tr>
                                     <td>{{ $mainImage->id }}</td>
                                     <td><img width="50px" src="{{ $mainImage->image_url }}" alt=""></td>
-                                    <td>{{ $mainImage->description }}</td>
                                     <td>
                                         <a href="{{ route('backend.mainImages.edit',$mainImage->id) }}">
                                             <button class="btn btn-default">Edit</button>

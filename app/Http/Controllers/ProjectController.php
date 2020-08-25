@@ -18,6 +18,7 @@ class ProjectController extends Controller
         $projects = Project::all();
         return view('backend.pages.projects.index',["projects" => $projects]);
     }
+
     public function create(){
 
         return view('backend.pages.projects.create');
@@ -27,6 +28,7 @@ class ProjectController extends Controller
     {
         $project = new Project();
         $project->title = $request->input("title");
+        $project->status = $request->input("status");
         $project->description = $request->input("description");
         if ($request->hasFile('image')) {
 
@@ -50,6 +52,7 @@ class ProjectController extends Controller
     {
         $project = Project::find($id);
         $project->title = $request->input("title");
+        $project->status = $request->input("status");
         $project->description = $request->input("description");
         if ($request->hasFile('image')) {
             if( $project->image_url){

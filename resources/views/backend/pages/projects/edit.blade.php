@@ -48,6 +48,19 @@
                         <div class="row">
                             <div class="col-md-7 pr-1">
                                 <div class="form-group">
+                                    <label for="status">{{__(" Status")}}</label>
+                                    <select name="status" class="form-control" style="border:1px solid #E3E3E3">
+                                        <option {{$project->status == 'normal' ? 'selected' : ''}}  value="normal">Normal</option>
+                                        <option {{$project->status == 'main' ? 'selected' : ''}}  value="main">Main</option>
+                                        <option {{$project->status == 'deactive' ? 'selected' : ''}}  value="deactive">Deactive</option>
+                                    </select>
+                                    @include('backend.alerts.feedback', ['field' => 'status'])
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 pr-1">
+                                <div class="form-group">
                                     <label class="d-block" for="image">{{__(" Image")}}</label>
                                     <img class="gal-img prev_img" id="prev_img2"
                                         src="{{$project->image_url!=null?$project->image_url:('assets/img/dummy.jpg')}}">
@@ -71,3 +84,4 @@
 {{-- <script type="text/javascript" src="{{ asset('vendor/jsvalidation/js/jsvalidation.js')}}"></script>--}}
 {{-- {!! JsValidator::formRequest('App\Http\Requests\CMS\AdCreateRequest', '#traditional_song_update') !!}--}}
 @endsection
+

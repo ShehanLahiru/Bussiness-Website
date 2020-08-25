@@ -12,9 +12,13 @@
 */
 Route::get('/', 'HomeController@home')->name('home');
 
+
 Route::get('/backend', 'Auth\LoginController@showLoginForm')->name('backend.login');
 Route::post('/dashboard', 'Auth\LoginController@login')->name('backend.login.submit');
 Route::post('logout', 'Auth\LoginController@logout')->name('backend.logout');
+
+Route::group(['middleware' => 'auth'], function () {
+
 Route::get('/dashboard', 'HomeController@index')->name('backend.dashboard');
 
 Route::resource('projects', 'ProjectController', ['as' => 'backend']);
@@ -22,12 +26,14 @@ Route::resource('mainImages', 'MainImageController', ['as' => 'backend']);
 Route::resource('customers', 'CustomerController', ['as' => 'backend']);
 Route::resource('contactDetails', 'ContactDetailController', ['as' => 'backend']);
 Route::resource('services', 'ServicesController', ['as' => 'backend']);
+// Route::get('/order_project', 'ProjectController@order')->name('order_project');
+// Route::post('/change_project_order', 'ProjectController@changeOrder')->name('change_project_order');
 
+});
 
 #frontend
 
 Route::get('/project', 'ProjectController@project')->name('project');
-// Route::get('/mainImage', 'MainImageController@project')->name('mainImage');
 
 Route::get('/contact_us', function () {
     return view('frontend/page/contact_us');
