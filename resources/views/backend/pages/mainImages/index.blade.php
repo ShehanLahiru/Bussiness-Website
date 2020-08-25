@@ -24,8 +24,8 @@
                         <table class="table">
                             <thead class=" text-primary">
                                 <th>ID</th>
-                                <th>Status</th>
                                 <th>Image</th>
+                                <th>Status</th>
                                 <th>Action</th>
                             </thead>
                             <tbody>

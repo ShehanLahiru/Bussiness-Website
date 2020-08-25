@@ -10,7 +10,8 @@ class ProjectController extends Controller
 
     public function project(){
 
-        return view('frontend/page/project');
+    $projects = Project::where('status','!=','deactive')->get();
+        return view('frontend/page/project',["projects" => $projects]);
     }
 
     public function index(){

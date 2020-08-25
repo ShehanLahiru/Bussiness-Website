@@ -39,13 +39,7 @@
                     <p>{{ __('Services') }}</p>
                 </a>
             </li>
-            <li class="@if ($activePage == 'contactDetails') active @endif">
-                <a href="{{ route('backend.contactDetails.index') }}">
-                    <i class="fas fa-user"></i>
-                    <p>{{ __('Contact Details') }}</p>
-                </a>
-            </li>
-           
+
         </ul>
     </div>
 </div>

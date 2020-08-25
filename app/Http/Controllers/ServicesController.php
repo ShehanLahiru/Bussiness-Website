@@ -9,8 +9,8 @@ use Illuminate\Http\Request;
 class ServicesController extends Controller
 {
     public function services(){
-
-        return view('frontend/page/project');
+        $services = Services::where('status','active')->orderby('created_at','desc')->get();
+        return view('frontend/page/about_us',["services" => $services]);
     }
 
     public function index(){

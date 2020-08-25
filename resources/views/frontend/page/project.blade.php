@@ -13,64 +13,22 @@
 <div class="site-section">
     <div class="container">
         <div class="row mb-5">
+            @foreach ($projects as $project )
             <div class="col-md-12 col-lg-12 mb-12">
                 <div class="post-entry bg-white">
                     <div class="image">
-                        <img src="images/4.jpg" alt="Image" class="img-fluid">
+                        <img src={{ asset($project->image_url) }} alt="Image" class="img-fluid">
                     </div>
                     <div class="text p-4">
-                        <h2 class="h2 text-black">Lorem ipsum dolor sit amet</h2>
-                        <h5 class="text-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error
-                            perspiciatis odit ullam officia.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fugiat facilis quasi ratione
-                            ducimus ipsam!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error perspiciatis odit
-                            ullam officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Alias fugiat facilis quasi ratione ducimus ipsam!
+                        <h2 class="h2 text-black">{{ $project->title }}</h2>
+                        <h5 class="text-details">{{ $project->description }}
                         </h5>
                     </div>
                 </div>
             </div>
+            @endforeach
 
-            <div class="col-md-12 col-lg-12 mb-12">
-                <div class="post-entry bg-white">
-                    <div class="image">
-                        <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="text p-4">
-                        <h2 class="h2 text-black">Lorem ipsum dolor sit amet</h2>
-                        <h5 class="text-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error
-                            perspiciatis odit ullam officia.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fugiat facilis quasi ratione
-                            ducimus ipsam!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error perspiciatis odit
-                            ullam officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Alias fugiat facilis quasi ratione ducimus ipsam!
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12 col-lg-12 mb-12">
-                <div class="post-entry bg-white">
-                    <div class="image">
-                        <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="text p-4">
-                        <h2 class="h2 text-black">Lorem ipsum dolor sit amet</h2>
-                        <h5 class="text-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error
-                            perspiciatis odit ullam officia.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fugiat facilis quasi ratione
-                            ducimus ipsam!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error perspiciatis odit
-                            ullam officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Alias fugiat facilis quasi ratione ducimus ipsam!
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12 col-lg-12 mb-12">
+            {{-- <div class="col-md-12 col-lg-12 mb-12">
                 <div class="post-entry bg-white">
                     <div class="image">
                         <img src="images/img_1.jpg" alt="Image" class="img-fluid">
@@ -87,83 +45,7 @@
                         </h5>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-md-12 col-lg-12 mb-12">
-                <div class="post-entry bg-white">
-                    <div class="image">
-                        <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="text p-4">
-                        <h2 class="h2 text-black">Lorem ipsum dolor sit amet</h2>
-                        <h5 class="text-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error
-                            perspiciatis odit ullam officia.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fugiat facilis quasi ratione
-                            ducimus ipsam!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error perspiciatis odit
-                            ullam officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Alias fugiat facilis quasi ratione ducimus ipsam!
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12 col-lg-12 mb-12">
-                <div class="post-entry bg-white">
-                    <div class="image">
-                        <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="text p-4">
-                        <h2 class="h2 text-black">Lorem ipsum dolor sit amet</h2>
-                        <h5 class="text-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error
-                            perspiciatis odit ullam officia.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fugiat facilis quasi ratione
-                            ducimus ipsam!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error perspiciatis odit
-                            ullam officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Alias fugiat facilis quasi ratione ducimus ipsam!
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12 col-lg-12 mb-12">
-                <div class="post-entry bg-white">
-                    <div class="image">
-                        <img src="images/img_4.jpg" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="text p-4">
-                        <h2 class="h2 text-black">Lorem ipsum dolor sit amet</h2>
-                        <h5 class="text-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error
-                            perspiciatis odit ullam officia.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fugiat facilis quasi ratione
-                            ducimus ipsam!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error perspiciatis odit
-                            ullam officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Alias fugiat facilis quasi ratione ducimus ipsam!
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12 col-lg-12 mb-12">
-                <div class="post-entry bg-white">
-                    <div class="image">
-                        <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="text p-4">
-                        <h2 class="h2 text-black">Lorem ipsum dolor sit amet</h2>
-                        <h5 class="text-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error
-                            perspiciatis odit ullam officia.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fugiat facilis quasi ratione
-                            ducimus ipsam!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum error perspiciatis odit
-                            ullam officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Alias fugiat facilis quasi ratione ducimus ipsam!
-                        </h5>
-                    </div>
-                </div>
-            </div>
+            </div> --}}
             {{-- <div class="row">
         <div class="col-md-12 text-center">
           <div class="site-block-27">
