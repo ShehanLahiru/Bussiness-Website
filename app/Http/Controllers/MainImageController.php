@@ -27,6 +27,7 @@ class MainImageController extends Controller
     {
         $mainImage = new MainImage();
         $mainImage->description = $request->input("description");
+        $mainImage->status = $request->input("status");
         if ($request->hasFile('image')) {
 
             $url = APIHelper::uploadFileToStorage($request->file('image'), 'public/common_media');
@@ -49,6 +50,7 @@ class MainImageController extends Controller
     {
         $mainImage = MainImage::find($id);
         $mainImage->description = $request->input("description");
+        $mainImage->status = $request->input("status");
         if ($request->hasFile('image')) {
             if( $mainImage->image_url){
                 APIHelper::removeImage($mainImage->image_url);

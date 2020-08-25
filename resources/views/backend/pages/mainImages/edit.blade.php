@@ -38,6 +38,18 @@
                         <div class="row">
                             <div class="col-md-7 pr-1">
                                 <div class="form-group">
+                                    <label for="status">{{__(" Status")}}</label>
+                                    <select name="status" class="form-control" style="border:1px solid #E3E3E3">
+                                        <option {{$mainImage->status == 'active' ? 'selected' : ''}}  value="active">Active</option>
+                                        <option {{$mainImage->status == 'deactive' ? 'selected' : ''}}  value="deactive">Deactive</option>
+                                    </select>
+                                    @include('backend.alerts.feedback', ['field' => 'status'])
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 pr-1">
+                                <div class="form-group">
                                     <label class="d-block" for="image">{{__(" Image")}}</label>
                                     <img class="gal-img prev_img" id="prev_img2"
                                         src="{{$mainImage->image_url!=null?$mainImage->image_url:('assets/img/dummy.jpg')}}">

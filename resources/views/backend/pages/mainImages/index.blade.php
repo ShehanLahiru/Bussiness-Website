@@ -24,6 +24,7 @@
                         <table class="table">
                             <thead class=" text-primary">
                                 <th>ID</th>
+                                <th>Status</th>
                                 <th>Image</th>
                                 <th>Action</th>
                             </thead>
@@ -32,6 +33,7 @@
                                 <tr>
                                     <td>{{ $mainImage->id }}</td>
                                     <td><img width="50px" src="{{ $mainImage->image_url }}" alt=""></td>
+                                    <td>{{ $mainImage->status}}</td>
                                     <td>
                                         <a href="{{ route('backend.mainImages.edit',$mainImage->id) }}">
                                             <button class="btn btn-default">Edit</button>

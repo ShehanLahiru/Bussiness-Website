@@ -27,6 +27,7 @@ class ServicesController extends Controller
     {
         $service = new Services();
         $service->title = $request->input("title");
+        $service->status = $request->input("status");
         $service->description = $request->input("description");
         if ($request->hasFile('image')) {
 
@@ -50,6 +51,7 @@ class ServicesController extends Controller
     {
         $service = Services::find($id);
         $service->title = $request->input("title");
+        $service->status = $request->input("status");
         $service->description = $request->input("description");
         if ($request->hasFile('image')) {
             if( $service->image_url){

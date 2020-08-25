@@ -52,7 +52,7 @@
                                         <option value="main">Main</option>
                                         <option value="deactive">Deactive</option>
                                     </select>
-                                    @include('backend.alerts.feedback', ['field' => 'description'])
+                                    @include('backend.alerts.feedback', ['field' => 'status'])
                                 </div>
                             </div>
                         </div>

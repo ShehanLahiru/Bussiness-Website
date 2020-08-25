@@ -26,6 +26,7 @@
                                 <th>ID</th>
                                 <th>Image</th>
                                 <th>Title</th>
+                                <th>Status</th>
                                 <th>Action</th>
                             </thead>
                             <tbody>
@@ -34,6 +35,7 @@
                                     <td>{{ $service->id }}</td>
                                     <td><img width="50px" src="{{ $service->image_url }}" alt=""></td>
                                     <td>{{ $service->title }}</td>
+                                    <td>{{ $service->status }}</td>
                                     <td>
                                         <a href="{{ route('backend.services.edit',$service->id) }}">
                                             <button class="btn btn-default">Edit</button>
