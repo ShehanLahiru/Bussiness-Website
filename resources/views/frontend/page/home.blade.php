@@ -8,7 +8,7 @@
             <div class="row align-items-center text-center image-details">
                 <div class="col-md-6">
                     <h1 class="head-topic">Welcome</h1>
-                    <h2 class="sub-topic">Solid Water System</h2>
+                    <h2 class="sub-topic">Solid Water Systems</h2>
                 </div>
                 <div class="col-lg-10 col-md-12">
                     <p class="page-para">
@@ -25,11 +25,11 @@
             <div class="row align-items-center text-center image-details">
                 <div class="col-md-6">
                     <h1 class="head-topic">Welcome</h1>
-                    <h2 class="sub-topic">Solid Water System</h2>
+                    <h2 class="sub-topic">Solid Water Systems</h2>
                 </div>
                 <div class="col-lg-10 col-md-12">
                     <p class="page-para">
-                        Solid Water System is Sri Lanka's one of the premier water treatment providers.
+                        Solid Water Systems is Sri Lanka's one of the premier water treatment providers.
                         We can maintain any kind of wastewater treatment plant and We provide full services to any type of reverse osmosis plant.
                     </p>
                 </div>

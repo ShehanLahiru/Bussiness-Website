@@ -35,7 +35,7 @@
 
     <!--  Social tags      -->
     <meta name="keywords" content="">
-    <meta name="description" content="Solid Water System">
+    <meta name="description" content="Solid Water Systems">
     <meta itemprop="image" content="{{ asset('images/logo.png') }}">
 
 
@@ -56,10 +56,10 @@
     <meta property="og:url" content="http://demos.creative-tim.com/now-ui-dashboard-pro/examples/dashboard.html"/>
     <meta property="og:image" content="{{  asset('images/logo.png') }}"/>
     <meta property="og:description"
-          content="  Solid Water System"/>
-    <meta property="og:site_name" content=" Solid Water System"/>
+          content="  Solid Water Systems"/>
+    <meta property="og:site_name" content=" Solid Water Systems"/>
     <title>
-       Solid Water System
+       Solid Water Systems
     </title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
           name='viewport'/>
