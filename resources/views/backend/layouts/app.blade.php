@@ -18,6 +18,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/favicon/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('assets/favicon/favicon-96x96.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon/favicon-16x16.png') }}">
+
+    <link href =
+        "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+            rel = "stylesheet">
     <link rel="manifest" href="{{ asset('assets/favicon/manifest.json') }}">
 
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -52,10 +56,10 @@
     <meta property="og:url" content="http://demos.creative-tim.com/now-ui-dashboard-pro/examples/dashboard.html"/>
     <meta property="og:image" content="{{  asset('images/logo.png') }}"/>
     <meta property="og:description"
-          content=" Online Shopping"/>
+          content="  Solid Water System"/>
     <meta property="og:site_name" content=" Solid Water System"/>
     <title>
-        Online Shopping
+       Solid Water System
     </title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
           name='viewport'/>
