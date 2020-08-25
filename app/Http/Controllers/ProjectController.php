@@ -10,7 +10,7 @@ class ProjectController extends Controller
 
     public function project(){
 
-    $projects = Project::where('status','!=','deactive')->get();
+    $projects = Project::where('status','!=','deactive')->orderby('status')->orderby('created_at','desc')->get();
         return view('frontend/page/project',["projects" => $projects]);
     }
 

@@ -38,7 +38,7 @@
                     <h6>
                         <i class="fas fa-phone mr-3"></i> + 01 234 567 88</h6>
                     <h6>
-                        <i class="fas fa-print mr-3"></i> + 01 234 567 89</h6>
+                        <i class="fas fa-print mr-3"></i>   <a href="https://www.facebook.com/ShehanL.Jayasinghe/">Facebook</a></h6>
 
                 </div>
 

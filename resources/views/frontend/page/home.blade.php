@@ -45,7 +45,7 @@
             <div class="col-md-6 col-lg-6 mb-6">
                 <div class="post-entry bg-white">
                     <div class="image">
-                        <img src={{  asset($project->image_url) }} alt="Image" class="img-fluid">
+                        <img src={{  asset($project->image_url) }} alt="Image" class="img-fluid" style="height: 500px">
                     </div>
                     <div class="text p-4">
                         <h2 class="h2 text-main">{{ $project->title }}</h2>

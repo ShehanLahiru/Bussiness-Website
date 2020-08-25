@@ -13,6 +13,10 @@ class HomeController extends Controller
 
         $mainImages = MainImage::where('status','active')->get();
         $projects = Project::where('status','main')->get();
+        foreach($projects as $project){
+            $project->description =  substr( $project->description ,0,100);
+        }
+
 
         return view('frontend/page/home',["projects" => $projects,"mainImages" => $mainImages]);
     }
