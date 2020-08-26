@@ -72,8 +72,8 @@
             </div>
             <div class="col-md-12 col-lg-6 mb-5">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7911.639209878227!2d80.35533494470852!3d7.485162028296652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae33a18c84dd003%3A0xdf4c90fbcbb7ef32!2sKurunegala%20Town%20Central%2C%20Kurunegala!5e0!3m2!1sen!2slk!4v1597719729928!5m2!1sen!2slk"
-                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.8788428067355!2d80.36915371477616!3d7.478628994605296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3398c00c0ebef%3A0xaa9f2ee1ef630972!2s304%20Kandy%20Rd%2C%20Kurunegala!5e0!3m2!1sen!2slk!4v1598436982730!5m2!1sen!2slk"
+                    width="100%" height="100%" frameborder="1" style="border:1;" allowfullscreen=""></iframe>
             </div>
         </div>
     </div>
