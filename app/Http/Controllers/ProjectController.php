@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use App\Project;
 use App\Helpers\APIHelper;
 use Illuminate\Http\Request;
+use App\Http\Requests\CreateProjectRequest;
+use App\Http\Requests\UpdateProjectRequest;
 
 class ProjectController extends Controller
 {
@@ -25,7 +27,7 @@ class ProjectController extends Controller
         return view('backend.pages.projects.create');
     }
 
-    public function store(Request $request)
+    public function store(CreateProjectRequest $request)
     {
         $project = new Project();
         $project->title = $request->input("title");
@@ -49,7 +51,7 @@ class ProjectController extends Controller
         $project = Project::find($id);
         return view('backend.pages.projects.edit', ["project" => $project]);
     }
-    public function update(Request $request,$id)
+    public function update(UpdateProjectRequest $request,$id)
     {
         $project = Project::find($id);
         $project->title = $request->input("title");

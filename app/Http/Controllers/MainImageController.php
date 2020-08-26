@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\MainImage;
 use App\Helpers\APIHelper;
 use Illuminate\Http\Request;
+use App\Http\Requests\CreateMainImageRequest;
 
 class MainImageController extends Controller
 {
@@ -23,7 +24,7 @@ class MainImageController extends Controller
         return view('backend.pages.mainImages.create');
     }
 
-    public function store(Request $request)
+    public function store(CreateMainImageRequest $request)
     {
         $mainImage = new MainImage();
         $mainImage->description = $request->input("description");

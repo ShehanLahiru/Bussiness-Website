@@ -42,7 +42,7 @@
                                         <option value="active">Active</option>
                                         <option value="deactive">Deactive</option>
                                     </select>
-                                    @include('backend.alerts.feedback', ['field' => 'description'])
+                                    @include('backend.alerts.feedback', ['field' => 'status'])
                                 </div>
                             </div>
                         </div>
@@ -52,7 +52,7 @@
                                     <label class="d-block" for="title">{{__(" Image")}}</label>
                                     <img class="gal-img prev_img" id="prev_img" src="{{asset('assets/img/dummy.jpg')}}">
                                     <input type="file" class="custom-file-input" name="image" id="custom-file-input">
-                                    @include('backend.alerts.feedback', ['field' => 'image_url'])
+                                    @include('backend.alerts.feedback', ['field' => 'image'])
                                 </div>
                             </div>
                         </div>

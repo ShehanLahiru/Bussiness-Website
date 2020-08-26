@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Services;
 use App\Helpers\APIHelper;
 use Illuminate\Http\Request;
+use App\Http\Requests\CreateServiceRequest;
+use App\Http\Requests\UpdateServiceRequest;
 
 class ServicesController extends Controller
 {
@@ -23,7 +25,7 @@ class ServicesController extends Controller
         return view('backend.pages.services.create');
     }
 
-    public function store(Request $request)
+    public function store(CreateServiceRequest $request)
     {
         $service = new Services();
         $service->title = $request->input("title");
@@ -47,7 +49,7 @@ class ServicesController extends Controller
         $service = Services::find($id);
         return view('backend.pages.services.edit', ["service" => $service]);
     }
-    public function update(Request $request,$id)
+    public function update(UpdateServiceRequest $request,$id)
     {
         $service = Services::find($id);
         $service->title = $request->input("title");
