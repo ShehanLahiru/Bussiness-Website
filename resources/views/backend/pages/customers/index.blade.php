@@ -22,6 +22,7 @@
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Contact No</th>
+                                <th>Received</th>
                                 <th>Action</th>
                             </thead>
                             <tbody>
@@ -31,6 +32,7 @@
                                     <td>{{ $customer->name }}</td>
                                     <td>{{ $customer->email }}</td>
                                     <td>{{ $customer->contact_no }}</td>
+                                    <td>{{ $customer->created_at }}</td>
                                     <td>
                                         <a href="{{ route('backend.customers.show',$customer->id) }}">
                                             <button class="btn btn-default">View</button>

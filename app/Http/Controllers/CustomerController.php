@@ -10,7 +10,7 @@ class CustomerController extends Controller
 {
     public function index(){
 
-        $customers = Customer::all();
+        $customers = Customer::orderby('created_at','desc')->get();
         return view('backend.pages.customers.index',["customers" => $customers]);
     }
     public function store(Request $request)
