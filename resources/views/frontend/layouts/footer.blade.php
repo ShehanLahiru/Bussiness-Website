@@ -38,7 +38,7 @@
                     <h6>
                         <i class="fas fa-phone mr-3"></i>0775933489 - Viraj maduranga </h6>
                     <h6>
-                        <i class="fas fa-print mr-3"></i>   <a href="https://www.facebook.com/ShehanL.Jayasinghe/">Facebook</a></h6>
+                        <i class="fas fa-print mr-3"></i>   <a href="https://www.facebook.com/solidwatersystems/">Facebook</a></h6>
 
                 </div>
 
