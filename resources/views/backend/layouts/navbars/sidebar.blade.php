@@ -15,16 +15,16 @@
                     <p>{{ __('Dashboard') }}</p>
                 </a>
             </li>
+            <li class="@if ($activePage == 'customers') active @endif">
+                <a href="{{ route('backend.customers.index') }}">
+                    <i class="fas fa-user"></i>
+                    <p>{{ __('MESSAGES') }}</p>
+                </a>
+            </li>
             <li class="@if ($activePage == 'projects') active @endif">
                 <a href="{{ route('backend.projects.index') }}">
                     <i class="fas fa-user"></i>
                     <p>{{ __('Projects') }}</p>
-                </a>
-            </li>
-            <li class="@if ($activePage == 'customers') active @endif">
-                <a href="{{ route('backend.customers.index') }}">
-                    <i class="fas fa-user"></i>
-                    <p>{{ __('Customers') }}</p>
                 </a>
             </li>
             <li class="@if ($activePage == 'mainImages') active @endif">

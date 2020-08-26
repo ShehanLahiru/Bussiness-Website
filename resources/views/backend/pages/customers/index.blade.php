@@ -52,6 +52,6 @@
             </div>
         </div>
     </div>
-    {{-- {{ $customers->links() }} --}}
+    {{ $customers->links() }}
 </div>
 @endsection

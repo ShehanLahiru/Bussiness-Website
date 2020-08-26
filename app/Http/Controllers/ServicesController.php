@@ -17,7 +17,7 @@ class ServicesController extends Controller
 
     public function index(){
 
-        $services = Services::all();
+        $services = Services::orderby('created_at','desc')->paginate(10);
         return view('backend.pages.services.index',["services" => $services]);
     }
     public function create(){

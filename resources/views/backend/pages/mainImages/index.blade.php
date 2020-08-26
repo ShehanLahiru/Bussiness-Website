@@ -53,6 +53,5 @@
             </div>
         </div>
     </div>
-    {{-- {{ $projects->links() }} --}}
 </div>
 @endsection
