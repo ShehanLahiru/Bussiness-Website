@@ -6,16 +6,13 @@
 ])
 
 @section('content')
-  {{-- <div class="panel-header panel-header-lg">
-    <canvas id="bigDashboardChart"></canvas>
-  </div> --}}
   <div class="content" style = " background:linear-gradient(to right, #0c2646 0%, #204065 60%, #2a5788 100%);background-size: auto;">
     <canvas id="bigDashboardChart"  style="padding-top:110px"></canvas>
   </div>
 
 @endsection
 
-{{-- @push('js')
+@push('js')
     <script>
         let date_array = @json($date_array);
         let count_array = @json($count_array);
@@ -112,4 +109,4 @@
         });
 
     </script>
-@endpush --}}
+@endpush
