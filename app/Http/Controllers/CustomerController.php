@@ -13,21 +13,7 @@ class CustomerController extends Controller
         $customers = Customer::orderby('created_at','desc')->paginate(10);
         return view('backend.pages.customers.index',["customers" => $customers]);
     }
-    public function store(Request $request)
-    {
-        $customer = new Customer();
-        $customer->name = $request->input("name");
-        $customer->email = $request->input("email");
-        $customer->contact_no = $request->input("contact_no");
-        $customer->message = $request->input("message");
-        $result = $customer->save();
-        if ($result) {
-            return redirect()->route('contact-us')->with(session()->flash('success', 'Message Added!'));
-        } else {
-            return redirect()->route('contact-us')->with(session()->flash('error', 'Something went wrong!'));
-        }
-    }
-
+   
     public function show($id)
     {
         $customer = Customer::find($id);

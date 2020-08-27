@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Customer;
 use App\ContactDetail;
 use App\Helpers\APIHelper;
 use Illuminate\Http\Request;
@@ -12,6 +13,22 @@ class ContactDetailController extends Controller
 
         return view('frontend/page/contact_us');
     }
+
+    public function storeMessage(Request $request)
+    {
+        $customer = new Customer();
+        $customer->name = $request->input("name");
+        $customer->email = $request->input("email");
+        $customer->contact_no = $request->input("contact_no");
+        $customer->message = $request->input("message");
+        $result = $customer->save();
+        if ($result) {
+            return redirect()->route('contact-us')->with(session()->flash('success', 'Thank You!'));
+        } else {
+            return redirect()->route('contact-us')->with(session()->flash('error', 'Something went wrong!'));
+        }
+    }
+
 
     // public function index(){
 

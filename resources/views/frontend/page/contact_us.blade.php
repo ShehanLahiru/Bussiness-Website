@@ -21,7 +21,7 @@
                         <h4 class="card-title"> Enter Your Message Here</h4>
                     </div>
                     <div class="card-body">
-                        <form id="riddle_create" method="post" action="{{ route('backend.customers.store') }}"
+                        <form id="riddle_create" method="post" action="{{ route('storeMessage') }}"
                             enctype="multipart/form-data">
                             @csrf
                             <div class="row">

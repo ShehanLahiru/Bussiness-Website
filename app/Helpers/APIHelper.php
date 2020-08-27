@@ -31,9 +31,10 @@ class APIHelper
     public static function removeImage($image_url)
 
     {
-        $image_url = str_replace('http://127.0.0.1:8000/storage/','public/',$image_url);
-        if(\Storage::exists($image_url)){
-            \Storage::delete($image_url);
+        $image_url = str_replace('storage/common_media/','',$image_url);
+
+        if( Storage::disk('public')->exists('common_media/' . $image_url)){
+           $result = Storage::delete('common_media/' .$image_url);
         }
         return true;
 

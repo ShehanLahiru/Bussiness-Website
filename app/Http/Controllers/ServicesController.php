@@ -11,7 +11,7 @@ use App\Http\Requests\UpdateServiceRequest;
 class ServicesController extends Controller
 {
     public function services(){
-        $services = Services::where('status','active')->orderby('created_at','desc')->get();
+        $services = Services::where('status','active')->get();
         return view('frontend/page/about_us',["services" => $services]);
     }
 
