@@ -26,6 +26,7 @@ Route::resource('mainImages', 'MainImageController', ['as' => 'backend']);
 Route::resource('customers', 'CustomerController', ['as' => 'backend']);
 // Route::resource('contactDetails', 'ContactDetailController', ['as' => 'backend']);
 Route::resource('services', 'ServicesController', ['as' => 'backend']);
+Route::post('/messageSearchByDate', 'CustomerController@messageSearchByDate')->name('backend.messageSearchByDate');
 
 });
 
