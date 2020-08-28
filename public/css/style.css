@@ -755,11 +755,16 @@ a {
   box-shadow: 0 5px 20px -2px rgba(0, 0, 0, 0.1); }
 
 .post-entry {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #e6e6e6; }
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #9ACD32;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+}
+
+
   .post-entry, .post-entry .text {
-    border-radius: 4px;
     border-top: none !important; }
   .post-entry .date {
     color: #a6a6a6;

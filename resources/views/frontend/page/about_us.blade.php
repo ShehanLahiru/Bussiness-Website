@@ -5,6 +5,7 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center">
                 <h1 class="mb-5">The Company</h1>
+                <h2 class="mb-5" style="color: antiquewhite">See our services</h2>
             </div>
         </div>
     </div>
@@ -13,9 +14,6 @@
 <div class="site-section bg-light">
     <div class="container">
         <div class="row mb-5 justify-content-center">
-            <div class="col-md-6 text-center">
-                <h2 class="display-4 text-black mb-5"><strong>SEE OUR SERVICES</strong></h2>
-            </div>
             @foreach ($services as $service )
             <div class="col-md-12 col-lg-12 mb-12">
                 <div class="post-entry bg-white">
