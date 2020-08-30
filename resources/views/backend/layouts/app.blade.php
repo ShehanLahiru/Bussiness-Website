@@ -36,7 +36,7 @@
     <!--  Social tags      -->
     <meta name="keywords" content="">
     <meta name="description" content="Solid Water Systems">
-    <meta itemprop="image" content="{{ asset('images/logo.png') }}">
+    <meta itemprop="image" content="{{ asset('images/logo.jpg') }}">
 
 
     <!-- Twitter Card data -->
@@ -46,7 +46,7 @@
 
     <meta name="twitter:description" content="">
     <meta name="twitter:creator" content="">
-    <meta name="twitter:image" content="{{  asset('images/logo.png') }}">
+    <meta name="twitter:image" content="{{  asset('images/logo.jpg') }}">
 
 
     <!-- Open Graph data -->
@@ -54,7 +54,7 @@
     <meta property="og:title" content=""/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="http://demos.creative-tim.com/now-ui-dashboard-pro/examples/dashboard.html"/>
-    <meta property="og:image" content="{{  asset('images/logo.png') }}"/>
+    <meta property="og:image" content="{{  asset('images/logo.jpg') }}"/>
     <meta property="og:description"
           content="  Solid Water Systems"/>
     <meta property="og:site_name" content=" Solid Water Systems"/>

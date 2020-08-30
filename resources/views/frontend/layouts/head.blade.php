@@ -22,7 +22,10 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-
+     <meta name="title" content="Solid water systems (pvt) Ltd">
+     <meta name="description" content=" Solid Water Systems is Sri Lanka's one of the premier water treatment providers.
+     We can maintain any kind of wastewater treatment plant and We provide full services to any type of reverse osmosis plant.">
+     <meta name="keywords" content="solid water systems,waste water treatment,reverse osmosis plant,water treatment plant">
 </head>
 
 <body>
