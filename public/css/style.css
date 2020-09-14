@@ -437,7 +437,7 @@ a {
   z-index: 2000;
   padding-top: 20px;
   background: #fff;
-  height: calc(100vh);
+  height: calc(60vh);
   -webkit-transform: translateX(110%);
   -ms-transform: translateX(110%);
   transform: translateX(110%);
@@ -497,14 +497,17 @@ a {
       padding: 10px 20px;
       display: block;
       position: relative;
-      color: #212529; }
+      color: rgb(0,0,128,0.6); }
       .site-mobile-menu .site-nav-wrap a:hover {
-        color: #f23a2e; }
+        color: #000066;
+        font-weight: bolder; }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li.active > a {
-        color: #f23a2e; }
+        color: #000066;
+        font-weight: bolder; }
+
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;

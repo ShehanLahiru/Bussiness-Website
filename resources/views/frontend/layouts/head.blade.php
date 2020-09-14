@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Solid Water Systems &mdash; </title>
+    <title>Solid Water Systems (Pvt) Ltd </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -100,7 +100,7 @@
                 });
              });
 
-             if ($(window).width() > 992) {
+            //  if ($(window).width() > 992) {
                 $(window).scroll(function(){
                     if ($(this).scrollTop() > 40) {
                         $('#site-navbar').addClass("fixed-top");
@@ -112,7 +112,7 @@
                     $('body').css('padding-top', '0');
       }
   });
-}
+// }
         </script>
 
 </body>
