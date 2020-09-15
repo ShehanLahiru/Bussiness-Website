@@ -50,7 +50,7 @@
                     <div class="text p-4">
                         <h2 class="h2 text-main">{{ $project->title }}</h2>
                         <h5 class="text-details">{{ $project->description }}
-                            <p class="mb-0"><a href="{{ route('project') }}" class=""><small
+                            <p class="mb-0"><a href="{{ route('projectCategory',$project->category) }}" class=""><small
                                         class="text-uppercase font-weight-bold ">Read
                                         More</small></a></p>
                         </h5>

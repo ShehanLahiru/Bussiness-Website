@@ -39,7 +39,7 @@ a {
  .text-main{
     font-size: 20px;
     font-weight: 700;
-    color: #28a745
+    color:darkcyan;
  }
  .text-heading-image{
     font-size: 30px;
@@ -74,7 +74,7 @@ a {
  }
 .site-blocks-cover p.page-para {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 1000;
     line-height: 1.8;
     color: #fff;
     text-align: left;
@@ -268,10 +268,11 @@ a {
     font-size: 0.8rem; }
 
   .site-navbar-top{
-    background: url(../images/topbag5.jpg);
+    /* background: url(../images/topbag5.jpeg); */
     padding: 20px;
     background-position: bottom;
     background-size: cover;
+    background-color: darkcyan;
     background-repeat: no-repeat;
     width: auto;
     height: auto;
@@ -594,7 +595,7 @@ a {
     letter-spacing: .2em; }
   .site-blocks-cover h1 {
     font-weight: 700;
-    color: #ADFF2F;
+    color: darkcyan;
     text-transform: uppercase;
     font-size: 3rem; }
     .site-blocks-cover h1 strong {
@@ -760,7 +761,7 @@ a {
 .post-entry {
     position: relative;
     overflow: hidden;
-    border: 3px solid #9ACD32;
+    border: 3px solid darkcyan;
     margin-right: 10px;
     margin-bottom: 20px;
     border-radius: 40px;

@@ -12,9 +12,15 @@ class ProjectController extends Controller
 
     public function project(){
 
-    $projects = Project::where('status','!=','deactive')->orderby('status')->orderby('created_at','desc')->get();
+        $projects = Project::where('status','!=','deactive')->orderby('status')->orderby('created_at','desc')->get();
         return view('frontend/page/project',["projects" => $projects]);
     }
+    public function projectCategory($category){
+
+        $projects = Project::where('category',$category)->where('status','!=','deactive')->orderby('created_at','desc')->get();
+            return view('frontend/page/project',["projects" => $projects]);
+        }
+
 
     public function index(){
 
@@ -32,6 +38,7 @@ class ProjectController extends Controller
         $project = new Project();
         $project->title = $request->input("title");
         $project->status = $request->input("status");
+        $project->category = $request->input("category");
         $project->description = $request->input("description");
         if ($request->hasFile('image')) {
 
@@ -56,6 +63,7 @@ class ProjectController extends Controller
         $project = Project::find($id);
         $project->title = $request->input("title");
         $project->status = $request->input("status");
+        $project->category = $request->input("category");
         $project->description = $request->input("description");
         if ($request->hasFile('image')) {
             if( $project->image_url){

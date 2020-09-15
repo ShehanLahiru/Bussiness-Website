@@ -43,6 +43,22 @@
                                 </div>
                             </div>
                         </div>
+                         <div class="row">
+                            <div class="col-md-7 pr-1">
+                                <div class="form-group">
+                                    <label for="category">{{__("Category")}}</label>
+                                    <select name="category" class="form-control"  style="border:1px solid #E3E3E3">
+                                        <option value="Waste water treatment plants">Waste water treatment plants</option>
+                                        <option value="Water treatment plants">Water treatment plants</option>
+                                        <option value="Commercial & Domestic RO plant">Commercial & Domestic RO plant</option>
+                                        <option value="Preventive maintenance any kind of water & waste water treatment plants">Preventive maintenance any kind of water & waste water treatment plants</option>
+                                        <option value="Water treatment chemicals ">Water treatment chemicals </option>
+                                        <option value="Water treatment equipments">Water treatment equipments</option>
+                                    </select>
+                                    @include('backend.alerts.feedback', ['field' => 'category'])
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-7 pr-1">
                                 <div class="form-group">

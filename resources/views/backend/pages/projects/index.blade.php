@@ -27,6 +27,7 @@
                                 <th>Image</th>
                                 <th>Title</th>
                                 <th>Status</th>
+                                <th>Category</th>
                                 <th>Action</th>
                             </thead>
                             <tbody>
@@ -36,6 +37,7 @@
                                     <td><img width="50px" src="{{ $project->image_url }}" alt=""></td>
                                     <td>{{ $project->title }}</td>
                                     <td>{{ $project->status }}</td>
+                                    <td>{{ $project->category }}</td>
                                     <td>
                                         <a href="{{ route('backend.projects.edit',$project->id) }}">
                                             <button class="btn btn-default">Edit</button>

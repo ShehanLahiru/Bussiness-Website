@@ -48,6 +48,22 @@
                         <div class="row">
                             <div class="col-md-7 pr-1">
                                 <div class="form-group">
+                                    <label for="category">{{__(" Category")}}</label>
+                                    <select name="category" class="form-control" style="border:1px solid #E3E3E3">
+                                        <option {{$project->category == 'Waste water treatment plants' ? 'selected' : ''}}  value="Waste water treatment plants">Waste water treatment plants</option>
+                                        <option {{$project->category == 'Water treatment plants' ? 'selected' : ''}}  value="Water treatment plants">Water treatment plants</option>
+                                        <option {{$project->category == 'Commercial & Domestic RO plant' ? 'selected' : ''}}  value="Commercial & Domestic RO plant">Commercial & Domestic RO plant</option>
+                                        <option {{$project->category == 'Preventive maintenance any kind of water & waste water treatment plants' ? 'selected' : ''}}  value="Preventive maintenance any kind of water & waste water treatment plants">Preventive maintenance any kind of water & waste water treatment plants</option>
+                                        <option {{$project->category == 'Water treatment chemicals' ? 'selected' : ''}}  value="Water treatment chemicals">Water treatment chemicals</option>
+                                        <option {{$project->category == 'Water treatment equipments' ? 'selected' : ''}}  value="Water treatment equipments">Water treatment equipments</option>
+                                    </select>
+                                    @include('backend.alerts.feedback', ['field' => 'category'])
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 pr-1">
+                                <div class="form-group">
                                     <label for="status">{{__(" Status")}}</label>
                                     <select name="status" class="form-control" style="border:1px solid #E3E3E3">
                                         <option {{$project->status == 'normal' ? 'selected' : ''}}  value="normal">Normal</option>
