@@ -32,9 +32,10 @@ Route::post('/messageSearchByDate', 'CustomerController@messageSearchByDate')->n
 });
 
 #frontend
+
 Route::get('/', 'HomeController@home')->name('home');
-Route::get('/project', 'ProjectController@project')->name('project');
-Route::get('/{category}', 'ProjectController@projectCategory')->name('projectCategory');
 Route::get('/about_us', 'ServicesController@services')->name('about-us');
 Route::get('/contact_us', 'ContactDetailController@contactDetails')->name('contact-us');
+Route::get('/project', 'ProjectController@project')->name('project');
+Route::get('/{category}', 'ProjectController@projectCategory')->name('projectCategory');
 Route::post('/storeMessage', 'ContactDetailController@storeMessage')->name('storeMessage');
